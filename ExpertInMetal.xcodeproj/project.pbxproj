@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8CF1ECF7215FA357002B401D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1ECF6215FA357002B401D /* AppDelegate.m */; };
-		8CF1ECFA215FA357002B401D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1ECF9215FA357002B401D /* ViewController.m */; };
+		8CF1ECFA215FA357002B401D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1ECF9215FA357002B401D /* ViewController.mm */; };
 		8CF1ECFD215FA357002B401D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1ECFB215FA357002B401D /* Main.storyboard */; };
 		8CF1ECFF215FA358002B401D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1ECFE215FA358002B401D /* Assets.xcassets */; };
 		8CF1ED02215FA358002B401D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF1ED00215FA358002B401D /* LaunchScreen.storyboard */; };
 		8CF1ED05215FA358002B401D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1ED04215FA358002B401D /* main.m */; };
+		8CF1ED0D215FAAD4002B401D /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF1ED0C215FAAD4002B401D /* ModelIO.framework */; };
+		8CF1ED0F215FAADA002B401D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF1ED0E215FAAD9002B401D /* MetalKit.framework */; };
+		8CF1ED11215FAADD002B401D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF1ED10215FAADD002B401D /* Metal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,15 @@
 		8CF1ECF5215FA357002B401D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CF1ECF6215FA357002B401D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CF1ECF8215FA357002B401D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8CF1ECF9215FA357002B401D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8CF1ECF9215FA357002B401D /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		8CF1ECFC215FA357002B401D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF1ECFE215FA358002B401D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CF1ED01215FA358002B401D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF1ED03215FA358002B401D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF1ED04215FA358002B401D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CF1ED0C215FAAD4002B401D /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		8CF1ED0E215FAAD9002B401D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		8CF1ED10215FAADD002B401D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF1ED11215FAADD002B401D /* Metal.framework in Frameworks */,
+				8CF1ED0F215FAADA002B401D /* MetalKit.framework in Frameworks */,
+				8CF1ED0D215FAAD4002B401D /* ModelIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				8CF1ECF4215FA357002B401D /* ExpertInMetal */,
 				8CF1ECF3215FA357002B401D /* Products */,
+				8CF1ED0B215FAAD3002B401D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +71,7 @@
 				8CF1ECF5215FA357002B401D /* AppDelegate.h */,
 				8CF1ECF6215FA357002B401D /* AppDelegate.m */,
 				8CF1ECF8215FA357002B401D /* ViewController.h */,
-				8CF1ECF9215FA357002B401D /* ViewController.m */,
+				8CF1ECF9215FA357002B401D /* ViewController.mm */,
 				8CF1ECFB215FA357002B401D /* Main.storyboard */,
 				8CF1ECFE215FA358002B401D /* Assets.xcassets */,
 				8CF1ED00215FA358002B401D /* LaunchScreen.storyboard */,
@@ -69,6 +79,16 @@
 				8CF1ED04215FA358002B401D /* main.m */,
 			);
 			path = ExpertInMetal;
+			sourceTree = "<group>";
+		};
+		8CF1ED0B215FAAD3002B401D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF1ED10215FAADD002B401D /* Metal.framework */,
+				8CF1ED0E215FAAD9002B401D /* MetalKit.framework */,
+				8CF1ED0C215FAAD4002B401D /* ModelIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF1ECFA215FA357002B401D /* ViewController.m in Sources */,
+				8CF1ECFA215FA357002B401D /* ViewController.mm in Sources */,
 				8CF1ED05215FA358002B401D /* main.m in Sources */,
 				8CF1ECF7215FA357002B401D /* AppDelegate.m in Sources */,
 			);
@@ -285,9 +305,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVZG4S3L8Y;
 				INFOPLIST_FILE = ExpertInMetal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +325,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HVZG4S3L8Y;
 				INFOPLIST_FILE = ExpertInMetal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
